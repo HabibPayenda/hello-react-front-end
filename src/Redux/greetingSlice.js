@@ -31,7 +31,7 @@ const GreetingSlice = createSlice({
       }))
       .addCase(fetchGreeting.fulfilled, (state, { payload }) => ({
         ...state,
-        cars: payload,
+        greeting: payload,
         status: 'idle',
       }))
       .addCase(fetchGreeting.rejected, (state, { error }) => ({

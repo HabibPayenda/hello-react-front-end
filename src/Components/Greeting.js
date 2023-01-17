@@ -10,8 +10,10 @@ export default function Greeting() {
     dispatch(fetchGreeting());
   }, [dispatch]);
 
-  console.log(greeting);
   return (
-    <div>Greeting</div>
+    <div>
+      Greeting:
+      {greeting.greating}
+    </div>
   );
 }
